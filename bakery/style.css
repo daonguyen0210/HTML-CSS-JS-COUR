@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.clear{
+    clear: both;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 5rem;
+    
+}
+
+h3{
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+
+
+button{
+    font-size: 2.4rem;
+}
+
+nav{
+    background:  cadetblue;
+    color: white;
+    padding: 3rem;
+}
+
+nav h1{
+    float: left;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav li{
+    float: left;
+    margin: 0rem 3rem;
+    text-shadow: none;
+}
+
+.first-section{
+    background-image: url("/bakery interface/img/bake.jpeg");
+    height: 98rem;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding-top: 20rem;
+    
+}
+
+.first-section h3{
+    padding: 2rem;
+}
+
+.first-section button{
+    padding: 1.6rem 2.8rem;
+    color: white;
+    background-color: #fed099;
+    border-color: #fed099;
+    border-style: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.second-section{
+    text-align: center;
+    margin: auto;
+}
+
+form input, form label, form textarea{
+    display: block;
+    margin: auto;
+    font-size: 2.2rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+}
+
+.second-section button{
+    padding: 1.6rem 2.8rem;
+    color: white;
+    background-color: #fed099;
+    border-color: #fed099;
+    border-style: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+}
