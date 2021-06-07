@@ -1,0 +1,89 @@
+1, link liên kết
+    <body>
+        <h3>image of udemy logo</h3>
+        <img src="./img/logo/udemy.jpg" alt="image of udemy" > <br>
+
+        <!-- target="_self" thì chính trang đó sẽ load trang mới theo đường link
+            target="_blank" thì nó sẽ load link sang trang mói
+            target="#" thì đường link đó trống (empty link) và quay trở về trang đâu -->
+        <a href="https://udemy.com" target="_blank">visit udemy to get more information</a>
+        <a href="https://youtube.com"><img src="./img/logo/youtube.jpg"  target="_blank" width="200" alt="the image of youtube"></a>
+    </body>
+
+2, tạo mũ lũy thừa và mũ dưới
+    <body>
+        <h1>hello i'm <sup>1st</sup> john <sub>in the town</sub></h1>
+    </body>
+
+
+3, kiểu chữ in đâm, nghiêng, biểu tượng
+    <p>Lorem ipsum dolor <strong>sit amet consectetur</strong> adipisicing elit. Eius error, adipisci, illo corrupti itaque dolore enim dolorum, aperiam veritatis <em>voluptatibus assumenda!</em> Sed, aspernatur similique! At mollitia soluta exercitationem libero reiciendis.</p>
+
+    sử dụng & và ấn ctrl+space sẽ hiện ra các thống số
+
+4, danh sách
+
+
+            <!-- ul: danh sách không có thứ tự
+            ol: danh sách có số thứ tự
+            li phần tử của danh sách-->
+
+        <ul>
+            <li>monday</li>
+            <li>tuesday</li>
+            <li>wednesday</li>
+        </ul>
+
+        <ol>
+            <li>john</li>
+            <li>lisa</li>
+            <li>kai</li>
+        </ol>
+
+5, label
+    dùng để giúp user nhận ra họ điền thông tin gì vào mục này, lable có tác dụng giúp tính minh bạch cho vùng ô trống để điền thông tin
+    <label for=""></label>, thuộc tính for phải có giá trị trùng với id của đối tượng
+
+6, table
+                <table>
+                <tr>
+                    <th><!---table heading-->name</th>
+                </tr><br>
+                <tr> <!---table row-->
+                    <td>john</td> <!---table data-->
+                    <td>peter</td>
+                    <td>sara</td>
+                </tr><br>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
