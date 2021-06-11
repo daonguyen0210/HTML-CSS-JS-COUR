@@ -1,0 +1,1077 @@
+/* font-size, width, height, pixels */
+/* với các kích thước tỉ lệ đặt theo % thì % theo kích thước parent
+
+<div class="outer">
+    <div class="inner"></div>
+</div>
+
+.outer{
+    width: 100px;
+    height: 100px;
+    background: tan;
+}
+
+.inner{
+    width: 50%;
+    height: 100%;
+    background: red;
+}
+*/
+
+/* 
+em - RELATIVE depends on parent
+1em = 16px defaut browser style
+1em = base value of nearest their parent
+
+1rem = 16px defaut browser html(style)
+1rem = base value of html class
+
+
+
+<div>
+    <h3 class="relative">relative</h3>
+</div>
+
+<div>
+    <h3 class="absolute">absolute</h3>
+</div>
+
+div{
+    font-size: 10px;
+}
+
+
+.relative{
+    font-size: 2em;
+}
+
+.absolute{
+    font-size: 32px ;
+}  
+
+*/
+
+/* 
+vw - width -percent of the screen 
+vh - height - percent of the screen
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    width: 50vw;
+    height: 50vh;
+    background: red;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background: royalblue;
+    border: 4px solid saddlebrown;
+}
+ */
+
+/* navbar và banner 
+ *{
+    margin: 0;
+    padding: 0;
+
+ }
+
+
+ .navbar{
+    background: blue;
+    height: 100px;
+    color: white;
+    font-size: 3rem;
+ }
+
+.banner{
+    background: red;
+    min-height: calc(100vh - 100px);
+}
+*/
+
+/* font-size, font-family
+
+file html
+    <h1 class="main">hey dude i'm main heading</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae dignissimos esse fuga repellat, harum odio expedita voluptatum atque illum accusantium! Neque alias ut atque eius id fugiat fugit? Dolores!</p>
+
+    <h1 class="subheading">subheading</h1>
+
+
+    <a href="#" id="die-link">this is empty link</a>
+
+end file
+
+body{
+    font-family: Helvetica;
+}
+
+h1{
+    nó sẽ suggession một loạt các font, nếu font nào  đó không được support bởi browser thì nó chuyển sang font kế tiếp, các font tương đương nhau
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+
+p{
+    font-family: 'Roboto Mono';
+    text-indent: 20em;  lùi đầu dòng
+    text
+}
+
+h1{
+    
+    text-align: left; căn chỉnh element
+}
+*/
+/* 
+line-height         dãn dòng
+letter-spacing      dãn kí tự 
+word-spacing        dãn chữ
+text-transform      hình thức văn bản
+text-decoration     hình mẫu trang trí kiểu chữ 
+
+file html
+    <h1>Hey i'm the main heading</h1>
+    <p class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident labore nemo! Accusamus fugit aliquam non facere sequi beatae ullam.
+    </p>
+
+    <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique corrupti modi temporibus sed quo, laboriosam officiis! Dolorum accusamus excepturi ipsam.</p>
+
+    <p class="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati aspernatur architecto praesentium omnis magni laudantium dolore facilis animi adipisci ipsam.</p>
+
+
+    <a href="#">This is empty link</a>
+
+end file
+
+
+h1{
+    text-transform: uppercase;
+}
+
+.one{
+    line-height: 1em;
+    text-decoration: line-through;
+}
+
+.two{
+    letter-spacing: 5px;
+    text-decoration: overline;
+}
+
+.three{
+    word-spacing: 15px;
+    text-decoration: underline;
+}
+
+
+
+a{
+    font-size: 40px;
+    text-decoration: none;
+}
+
+*/
+
+
+/* box, padding, margin, border 
+file html
+     <!-- padding, box and margin  -->
+    <h1>hello i would like to learn about css box model</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a sapiente nihil repudiandae voluptatibus eveniet tempora possimus ex at quibusdam!</p>
+end file
+
+
+cmt{
+    /cmt set whole elements to defaut  cmt/
+    padding: 0;
+    margin: 0;
+    /cmt box-sizing: border-box; cmt/
+}
+
+h1{
+    background: green;
+
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1.2rem;
+    padding-right: 2rem;
+
+    margin: 1rem;
+
+    width: 100%;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: khaki;
+
+}
+
+p{
+    background: indianred;
+
+    margin: 1rem ;
+
+    border: 10px solid tan  ;
+}
+*/
+
+/* outline and inline 
+outline là đường viền còn nằm cả bên ngoài của border
+
+file html
+    <!-- outline and inline -->
+    <div class="buttons">
+        <a href="#" id="one">no outline</a>
+        <a href="#" id="two"> outline</a>
+    </div>
+end file
+
+
+.buttons{
+    margin: 3rem;
+}
+
+a{
+    background: #689f3f;
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+#one{
+    border: 0.2rem solid #222;
+}
+
+#two{
+    outline-width: 0.2rem;
+    outline-style: solid;
+    outline-color: #222;  
+    outline-offset: 10px;
+}
+*/
+
+/* 
+display
+block
+inline
+inline-block
+
+defaut display peoperty
+Block: always starts a new line and takes full width
+Inline: does not start and only take up as much as content space
+
+file html
+    <div class="block">i'm block element</div>
+    <h1 class="block"> i'm block element</h1>
+    <p class="block">i'm block element</p>
+
+    <span class="inline">i'm inline element</span>
+    <span class="inline">i'm inline element</span>
+    <a href="#" class="inline">i'm inline element</a>
+    <img src="./img/smoothie.jpeg" alt="smoothie image" width="70">
+end file
+
+body{
+    text-align: center;
+}
+
+.block{  
+    background: blue;
+    color: white;
+    /cmt display: inline; cmt/
+} 
+ 
+.inline{
+    background: red;
+    color: white;
+    /cmt display: block; cmt/
+    /cmt margin: 2rem 1rem; cmt/
+}
+*/
+
+/* inline block 
+So với display: inline, sự khác biệt chính là display: inline-block cho phép thiết lập chiều rộng và chiều cao trên phần tử.
+
+Ngoài ra, với display: inline-block, lề / đệm trên cùng và dưới cùng được tôn trọng, nhưng với display: inlinechúng thì không.
+
+So với display: block, sự khác biệt chính là display: inline-block không thêm dấu ngắt dòng sau phần tử, vì vậy phần tử có thể nằm cạnh các phần tử khác.
+
+file html
+<h1>hello world</h1>
+<a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+end file
+a{
+    font-size: 20px;
+    background: red;
+    margin: 20px; 
+    /cmt display: inline; cmt/
+}
+*/
+
+
+/* box-sizing 
+
+file html
+    <div class="box-1"> <h1>i'm with border-box </h1></div>
+    <div class="box-2"> <h1>i'm normal  </h1></div>
+    <div class="box-3"> <h1>i'm without border-box </h1></div>
+end file
+
+
+.box-1, .box-2, .box-3{
+    width: 200px;
+    height: 200px;
+    box-sizing: ;
+}
+
+
+.box-1{
+    background: red;
+    color: white;
+    padding: 20px;
+    /cmt box-sizing: border-;
+        thuộc tính này định nghĩa về kích thước, border-box: kích thước bao gồm cả border, content-box: chỉ bảo gồm content  cmt/
+}
+
+.box-2{
+    background: blueviolet;
+    color: white;
+}
+
+.box-3{
+    background: green;
+    color: white;
+    padding: 20px;
+}
+
+*/
+
+
+/* 
+display: none
+opacity: 0  độ mờ 1: rõ nét nhất, 0 là mờ nhất_biến mất nhưng vẫn tồn tại ở đó
+visibility: hidden 
+div{
+    background: blue;
+    margin: 10px;
+    color: white;
+}
+
+
+.none{
+    display: none;
+}
+
+.opacity-0{
+    opacity: 0;
+}
+
+
+.opacity-1{
+    opacity: 1;
+}
+
+.opacity-5{
+    opacity: 0.1;
+}
+
+*/
+
+/* 
+background: url
+background-repeat
+background-resize
+background-position
+background-attachment
+shorthand syntax 
+file hmtl
+    <div class="big-img">
+        <h1>i'm big image</h1>
+    </div>
+
+    <div class="small-img">
+        <h1>i'm small image</h1>
+    </div>
+
+ 
+    <div class="folder-img">
+        <h1>i'm folder image</h1>
+    </div>
+end file
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    color: greenyellow;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+
+.big-img{
+    /cmt url: uniform resources locator: vị trí nguồn liên kết đồng nhất cmt/
+    background: url("./img/night_city.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+/cmt contain
+Scales the image as large as possible within its container without cropping or stretching the image. If the container is larger than the image, this will result in image tiling, unless the background-repeat property is set to no-repeat.
+
++ cover
+Scales the image as large as possible to fill the container, stretching the image if necessary. If the proportions of the image differ from the element, it is cropped either vertically or horizontally so that no empty space remains cmt/
+}
+
+.big-img h1, .small-img h1, .folder-img h1{
+    border: 3px solid white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.small-img{
+    background: url("./img/chicken.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /cmt set position cho image cmt/
+    background-position: right;        
+    /cmt height: 100vh; cmt/
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+.folder-img{
+    background: url("./img/cele.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+*/
+
+
+/*  linear-gradient 
+
+
+file html
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+end file
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+div{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.one{
+    background: linear-gradient(red, green);
+}
+
+.two{
+    background: linear-gradient( to top, red, green);
+}
+
+.three {
+    /cmt background: linear-gradient( to left top, green, yellow); cmt/
+    /cmt linear-gradient quay theo chiều kim đồng hồ(quy chuẩn ra góc dương), lấy trục gradient(trục để làm mịn màu) là trục đối xứng dọc cmt/
+    background: linear-gradient(180deg, green, yellow);
+}
+
+.four{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(125, 125, 67, 0.6));
+}
+*/
+
+/* gradinet color and image
+
+file html
+    <div class="banner">
+        <h1>smoothie world</h1>
+    </div>
+
+    <div class="header">
+        <h1>hello people</h1>
+    </div>
+end file
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    font-size: 60px;
+    color: white ;
+}
+
+.banner{
+    background: url("./img/smoothie.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/smoothie.jpeg") center/cover no-repeat fixed;
+}
+*/
+
+/* float, clear
+position: static, relative, absolute, fixed
+media-quẻies
+z-index
+::before and ::after pseudo elements 
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    clear: both;
+}
+
+div{
+    border: 3px solid red;
+    background: yellow;
+    margin-top: 30px;
+    text-align: left;
+    /cmt this is default cmt/
+    position: static;
+}
+
+.one{
+    /cmt position: relative; cmt/
+    background: blue ;
+    text-align: left;
+    position: static;
+}
+
+.two{
+    clear: both;
+    background: greenyellow ;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    right: 200px;
+}
+
+.special{
+    background: lightcoral;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+}
+
+button{
+    background: burlywood;
+    font-size: 40px;
+    color: white;
+    padding: 1rem;
+    font-family: cursive;
+    cursor: pointer;
+    border-radius: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+*/
+
+
+/* z-index 
+
+file html
+    <div class="banner">
+        <img src="./img/cake.PNG" alt="" class="one">
+        <img src="./img/cele.jpeg" alt="" class="two">
+        <img src="./img/night_city.jpeg" alt="" class="three">
+    </div>
+end file
+img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.banner{
+    margin: 20px;
+    width: 70vw;
+    height: 70vh;
+    border: 5px solid red;
+    position: relative;
+}
+
+.one{
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.two{
+    top: 10%;
+    left: 10%;
+    z-index: 0;
+}
+
+.three{
+    top: 20%;
+    left: 20%;
+    z-index: -1;
+}
+
+*/
+
+/* ::before and ::after with the content 
+but with the image it no effect
+
+file html
+    <p>before and after pseudo elements</p>
+
+    <div class="image">
+        <img src="./img/cake.PNG" alt="image" width="300" height="300">
+    </d
+end file
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+p::before{
+    content: "hello ";
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+p::after{
+    content: " after";
+    font-size: 2rem;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: green ;
+    color: yellow ;
+}
+ */
+
+/* basic selectors
+pseudo class selectors
+pseudo element selectors */
+
+/* basic selectors 
+*{
+    color: red;
+}
+
+#heading{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: green;
+}
+
+p{
+    letter-spacing: 1rem;
+}*/
+
+/* DESCENANT AND CHILD COMBINATORS  
+descendant: tức là chọn cả con lẫn cháu
+child: chỉ chọn mỗi con  
+
+file html
+
+    <div class="header">
+        <h1>i'm child and decendant</h1>
+    </div>
+
+    <div class="header">
+        <ul>
+            <h1>i'm descendant</h1>
+        </ul>
+    </div>
+end file
+
+div h1{ /cmdlooking for the the descendatcmd/
+    color: red;
+}
+
+div >h1{    /cmdlooking for the child selectorcmd/
+    color: blue;
+}
+
+
+.header h1{
+    color: green;
+}
+
+.header >h1{
+    color: brown;
+}
+*/
+
+
+/* ::first-line ::first-letter
+
+file html
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam cupiditate consequatur repudiandae. Placeat atque modi praesentium ad consequatur.</p>
+end file
+
+p::first-line{
+    font-weight: bold;
+}
+
+p::first-letter{
+    font-size: 3rem;
+}
+
+ */
+
+ /* :hover 
+ khi đặt con trỏ chuột vào vungf đó thì các thuộc tính được set trong :hover dược thực hiện
+
+ file html
+    <div class="header">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis saepe ipsam cumque, repudiandae iure rem excepturi sit sint distinctio optio.
+    </div>
+
+    <a href="#">this is a link</a>
+ endfile
+ p:hover{
+    color: red;
+ }
+
+.header:hover{
+    background: blue;
+
+}
+ 
+a:hover{
+    text-decoration: none;
+}
+
+*/
+
+/* :root root element of the document html element
+general styles
+css variables: đó là sự thay đổi về kích thước font chữ khi user thay đổi định dạng font chữ ở trong browser
+file html
+    <h1>the root</h1>
+    <p class="absolute">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quae consequuntur vel totam praesentium impedit dolore maiores! Eaque, quae aliquid!</p>
+    <p class="responsive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quae consequuntur vel totam praesentium impedit dolore maiores! Eaque, quae aliquid!</p>
+end file
+:root{ /cmt this is general styles, có nghĩa là thay đổi 
+    bố cục toàn bộ trang mà khong ảnh hưởng đến các thành phần bố cục trong trangcmt/
+    /cmt background: red; cmt/
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.absolute{
+    font-size: 24px;
+}
+
+.responsive{
+    font-size: 1.5rem;
+}*/
+
+
+/* TRANSFROM, TRANSITION AND ANIMATION 
+/cmt transform: translate(), scale() and rolate() cmt/
+
+file html
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+end file
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+div:hover{
+    background: coral;
+}
+
+.one{
+    background: red;
+    /cmt transform: translateX(20px); cmt/
+}
+
+
+.two{
+    background: blue;
+    /cmt transform: translateY( -20px); cmt/
+    /cmt transform: scaleX(2); cmt/
+}
+
+.three{
+    background: green;
+    /cmt with 200px goes to right, and 300px to the bottom cmt/
+    /cmt transform: translateX(200px, 300px); cmt/
+    /cmt transition-property: background, border-radius; cmt/
+    /cmt 4second to exchange from source to destination and 2s to reversed exchange cmt/
+    /cmt transition-duration: 4s, 2s ; cmt/
+    transition: background, border-radius, 3s, 2s;
+} 
+
+.three:hover{
+    border-radius: 50%;
+}
+*/
+
+/* ease: default
+ease: slow start, fast, slow end
+linear: same speed start to end
+ease-in: slow start
+ease-out: slow end
+ease-in-out: slow start, fast, slow end
+
+
+file html
+    <div class="default">default</div>
+    <div class="ease">ease</div>
+    <div class="linear">linear</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+
+end file
+div{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s ease-in;
+}
+
+
+div:hover{
+    transform: translateX(100px);
+}
+
+.ease{
+    transition: all 2s ease;
+    transition-timing-function: ease;
+}
+
+.linear{
+    transition: all 2s linear;
+    transition-timing-function: linear;
+}
+
+.ease-in{
+    transition: all 2s ease-in;
+    transition-timing-function: ease-in;
+}
+
+.ease-out{
+    transition: all 2s ease-out;
+    transition-timing-function: ease-out;
+} */
+
+
+/* 
+Transition 0 = 100% 
+animation 0 1% 2% .... 100%*/
+
+div{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    color: white;
+}
+
+
+/* TRANSITION
+.transition{
+    background: red;
+     property name | duration | easing function | delay 
+    transition: all 1s linear ;
+}
+
+.transition:hover{
+    background: yellow;
+    transform: translateX(100px);
+    border-radius: 50%;
+     
+} */
+
+/* animation  
+.animation{
+    background: blue;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+
+file html
+    <div class="transition">transition</div>
+    <div class="animation">animation</div>
+end file 
+@keyframes move{
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(100px);
+        background: red;
+    }
+    75%{
+        transform: translateX(-200px);
+        background: yellow;
+    }
+    100%{
+        transform: translateX(20px);
+        background: green;
+    }
+}
+
+.animation{
+    background: blue;
+    animation: move 5s 2;
+    /cmt animation-fill-mode: what values are applied by the animation outside the time it is executing cmt/
+    animation-fill-mode: backwards;
+}
+
+@keyframes move{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        transform: translateX(200px);
+        opacity: 0.25;
+    }
+    50%{
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(00px);
+        opacity: 0.5;
+    }
+}
+*/
+
+
+/* CSS VARIABLES AKA custom properties hold a value and rếu it 
+--varName: value
+property: var (--varName)
+scope
+:root{} === global
+element === local
+any property */
+
+/*  việc thay đổi từng màu sắc gây mất time, ảnh hưởng đến việc khác => làm cách khác thông minh hơn.
+.heading{
+    color: #f15025;
+}
+
+
+.text{
+    color: #32ff0e;
+}
+
+.main-text{
+    color: #1313fa;
+}
+
+.second-heading{
+    color: #f15025;
+} */
+
+
+:root{
+    --primaryColor: #f15025;
+    --secondaryColor:#f15025;
+    --mainTransition: all 0.34s linear;
+}
+
+.heading{
+    color: var(--primaryColor);
+}
+
+.second-heading{
+    color: var(--primaryColor );
+    transition: var(--mainTransition );
+}
+
+.second-heading:hover{
+    color: var(--secondaryColor);
+
+}
+
+div{
+    --primaryRed: red;
+
+}
+
+.main-text{
+    color: var(--primaryRed); 
+}
+
+.third-heading{
+    color: var(--primaryRed);
+}
+
+
