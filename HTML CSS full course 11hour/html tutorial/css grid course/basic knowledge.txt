@@ -1,0 +1,46 @@
+what is grid in css
+    grid is the most powerful layout of css, it is a 2-dimensional system meaning, it can be used to layout elements in rows and columns at the same times.
+
+some grid main concepts:
+    +, grid line: đường grid
+    +, grid track: là một dãy ô theo hàng hoặc cột
+    +, grid area: một khối bao gồm cả hàng lẫn cột
+    +, grid cell
+
+3, container and items:
+    +, a container is a elements which contains many items:
+    
+4, cũng có thể đặt tên cho column/row:
+    grid-template-colum: [col-start] 1fr..... [col-n] 1fr [col-end]
+
+5, explict và implict:
+    một container có thể chứa tới 9 items, nhưng thực tế chỉ có 6 items được chứa, vậy vùng chứa 6 items đó là explict, và vùng 3items còn lại là explict
+    grid-template-*: được dùng để tạo căn chỉnh cho explict
+    grid-auto-*: được dùng để tạo căn chỉnh cho implict
+
+6, justify-item, align-item và place-items
+    +,justify-item căn chỉnh theo chiều dọc của item
+        (start: căn lề trái, end: cl phải, center: căn giữa, strech: lấp đầy chiều rộng của ô)
+
+    +, align-item căn chỉnh theo chiều ngang của item
+        (start: căn lề trên, end: cl dưới, center: căn giữa_theo chiều ngang, strech lấp đầy)
+
+    +, place-items đặt 2 property vào syntax, giá trị đầu cho align, giá trị 2 cho justify, nếu giá trị 2 bị bỏ qua thì giá trị đầu được gắn cho 2 thuộc tính.
+
+7, align-content, justify-content
+    +, align-content là căn chỉnh cả khối explict theo chiều dọc
+        (start: căn lề trái, end: cl phải, center: căn giữa, strech: lấp đầy cả grid_biến mất implict,
+        space_around: chèn space giữa các container, 1/2space ở mổi đầu
+        space-between: chèn space giwac các container, hai đầu mép sát lề trái phải
+        space-evenly: đặt space giữa các container, cả đầu và cuối.)
+    
+    +, justify-content là căn chỉnh cả khối explict theo chiều ngang
+        (start: căn chỉnh lề trên,  end: căn chỉnh lề dưới
+        center: căn chỉnh giữa,
+        space_around: chèn space giữa các container, 1/2space ở mổi đầu
+        space-between: chèn space giwac các container, hai đầu mép sát lề trái phải
+        space-evenly: đặt space giữa các container, cả đầu và cuối. )
+
+8, auto-fit and auto-fill
+    +, auto-fit là một thuộc tính, nó sẽ tăng/giảm kích thước để phù hợp với border
+    +, auto-fill sẽ để chừa khoảng trống(etc..) để space đó vừa đủ cho item.

@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    margin: 10px 30px;
+}
+
+span{
+    font-size: 25px;
+}
+
+.title:hover{
+    cursor: pointer;
+}
+
+/* căn chỉnh grid và items
+file html
+        <h1 class="title"><span>The Coplete Guide To</span> <br>Css Grid</h1>
+
+
+        <div class="container">
+            <div class="item one">1</div>
+            <div class="item two">2</div>
+            <div class="item three">3</div>
+            <div class="item four">4</div>
+            <div class="item five">5</div>
+            <div class="item six">6</div>
+            <!-- <div class="item a">A</div>
+            <div class="item b">B</div> -->
+
+            <!-- <div class="item seven">7</div>
+            <div class="item eigh">8</div>
+            <div class="item nine">9</div>
+            <div class="item ten">10</div>
+            <div class="item eleven">11</div>
+            <div class="item twelve">12</div> -->
+        </div>
+end file
+
+/cmt child selectors cmt/
+.container div{
+    background: cadetblue;
+    color: whitesmoke;
+    text-align: center;
+    /cmt margin: 5px 1rem; cmt/
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 0.5rem;
+    transition: background 0.5s;
+}
+.container > div:hover{
+    background: mediumturquoise;
+}
+
+.container{
+    width: 70vw;
+    height: 60vh;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: 4px solid mediumslateblue;
+    border-radius: 20px;
+    padding: 0.3rem;
+    display: grid;
+
+    
+    /cmt dãn cách theo row là 10px cmt/
+    grid-row-gap: 10px;
+    /cmt dãn cách theo column là 5px cmt/
+    grid-column-gap: 7px;
+    /cmt dãn cách theo row | column cmt/
+    grid-gap: 0.3rem 0.1rem;
+
+    /cmt grid-template-columns: 1fr 1fr 1fr; cmt/
+    /cmt grid-template-columns: repeat(3, 1fr); cmt/
+    /cmt grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]; cmt/
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px 50px;
+    grid-auto-rows: 50px;
+    /cmt grid-auto-columns: 10px; cmt/
+
+    /cmt tự động điền thao hàng/cột, hết thì viết vào hàng/cột tiếp theo
+    keyword dense: có nghĩa là tối ưu tất cả các hàng và cột của explict, việc tối ưu này được thực hiện sau cùng cmt/
+    grid-auto-flow: column;
+
+    /cmt CĂN CHỈNH cmt/
+    /cmt align-items: start; cmt/
+    /cmt justify-items: stretch; cmt/
+    place-items: strech; /cmtchỉ có tác dụng trong cellcmt/
+
+    align-content: end;
+    justify-content: start; 
+}*/
+
+
+/* chia gird trong container 
+
+file html
+    <div id="container">
+        <div class="item header" style="background: #f5b504;  cursor: pointer;">header</div>
+
+        <div class="item main" style="background: #f7ce5d;  cursor: pointer;">main</div>
+
+        <div class="item sidebaer" style="background: #fae975;  cursor: pointer;">sidebar</div>
+
+        <div class="item footer" style="background: #FFBD90;  cursor: pointer;">footer</div>
+    </div>
+end file
+
+#container >div{
+    border-radius: 0.5rem;
+    padding: auto auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container > .item{
+    color: red;
+}
+
+#container{
+    width: 70vw;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 0.3rem;
+    background-color: whitesmoke;
+    font-size: 30px;
+    color: seashell;
+    border: 2px solid darkcyan;
+    border-radius: 0.6rem;
+    display: grid;
+    grid-gap: 0.3rem 0.3rem;
+    place-content: strech;
+    
+    grid-template-columns: repeat(3, 1fr);
+
+    /cmt  <track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( [ <length> | <percentage> ] 
+    row1 là 60px, row2 là auto, row3 là 30pxcmt/
+    grid-auto-rows: 60px auto 100px;
+
+    /cmt chia grid cho container( explict + implict ), số hàng và cột của vùng chia phải giống như giá trị đặt grid-template-cmt và grid-auto-cmt cmt/
+    grid-template-areas: "header header header""main main sidebar""footer footer footer" ;
+    /cmt grid-template-areas:
+    "header header header" 60px
+    "main main sidebar" auto
+    "footer footer footer" 100px / repeat(3,1fr); cmt/
+}
+
+#container >.header{
+    grid-area: header;
+}
+
+#container >.main{
+    grid-area: main;
+}
+
+#container >.siadbar{
+    grid-area: sidebar;
+}
+
+#container >.footer{
+    grid-area: footer;
+}*/
+
+.container > div{
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    background: rgb(247, 247, 106);
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
+
+.container{
+    width: 70vw;
+    height: 60vh;
+    border: 2px solid darkgreen;
+    padding: 0.3rem;
+    margin: auto auto;
+    border-radius: 1rem;
+    display: grid;
+    grid-gap: 0.3rem;
+
+    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-auto-rows: 100px;
+    grid-auto-flow: row;
+
+    /* row / column */
+    grid: 50px 50px / repeat(3, 1fr);
+}
+
+#one{
+    grid-column-start: 1;
+    /* grid-column-end: 4; */
+    grid-column-end: -1;
+    /* grid-column: col-start / col-end */
+    grid-column: 1 / -1;
+}
+
+#two{
+    /* grid-row-start: 2; */
+    /* grid-row-end: 5; */
+    /* grid-row: row-start / row-end */
+    grid-row: 2 / 5;
+}
+
+#five{
+    align-self: end; /* following the cross axis, chiều dọc*/
+    justify-self: center; /* following the main axis, chiều ngang*/
+    /* place-self: ; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
