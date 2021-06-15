@@ -1,0 +1,22 @@
+
+Preparation:
+
+TODO
+1, Build the project
+    +, creating the folder
+    +, adding files
+    +, connecting the files
+
+2, Navbar
+    +, 2 links and a name
+
+3, Portfilio item grid
+    +, images
+    +, titles
+    +, animations
+    +, javascript
+
+4, About page   
+    +, images
+    +, split layout
+    +, content
