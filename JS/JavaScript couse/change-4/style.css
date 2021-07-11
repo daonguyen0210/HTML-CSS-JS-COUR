@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    background: linear-gradient(45deg, rgb(191, 0, 255), rgb(255, 128, 0));
+
+}
+
+
+
+.container-5{
+    width: 75%;
+    height: 62vh;
+    margin: 0 auto;
+
+    background: linear-gradient(0deg, rgb(0,104,101), rgb(0,50,49));
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+    display: grid;
+    grid-template-rows: 150px auto;
+}
+
+/* DIV title */
+    .title{
+        display: grid;
+        grid-template-rows: 70px 50px;
+        place-items: center;
+        color: goldenrod;
+
+    }
+    
+        .title h2{
+            font-size: 38px;
+
+        }
+
+        .title h3{
+            font-size: 32px;
+        }
+
+/* DIV Content */
+    .content{
+        display: grid;
+        grid-template-rows: 30vh 6vh auto;}
+
+        .flex-blackjack-row-1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: whitesmoke;
+            justify-content: center;}
+
+            .flex-blackjack-row-1 #your-box{
+                border-right: 2px dashed goldenrod;
+                display: grid;
+                grid-template-rows: 6vh auto;
+            }
+
+            .flex-blackjack-row-1 #your-box #your-box-title h2{
+                width: auto;
+                margin: 1.2vh auto;
+                text-align: center;
+            }
+
+            .flex-blackjack-row-1 #your-box #your-box-playing-cards,
+            .flex-blackjack-row-1 #dealer-box #dealer-box-playing-cards{
+                display: grid;
+                grid-template-columns: repeat( 3, 100px);
+                justify-content: space-evenly;
+                align-items: center;}
+
+            .flex-blackjack-row-1 #your-box #your-box-playing-cards img,
+            .flex-blackjack-row-1 #dealer-box #dealer-box-playing-cards img{
+                /* margin: 10px; */
+                border-radius: 8px;
+                /* grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr)); */
+                /* justify-content: space-between; */
+                /* align-items: center; */
+            }
+
+
+        .flex-blackjack-row-2{
+            margin: auto;}
+
+            .flex-blackjack-row-2 button{
+                width: 60px;    
+                height: 28px;            
+                margin: auto 20px;
+                border-radius: 7px;
+                border: none;       
+                font-family: 'Roboto Mono', monospace;  }
+            
+
+            .flex-blackjack-row-2 .btn-hit{
+                color: white;
+                background-color: #C10404;  }
+
+            .flex-blackjack-row-2 .btn-stand{
+                color: white;
+                background-color: #18338B;  }
+
+            .flex-blackjack-row-2 .btn-deal{
+                color: white;
+                background-color: #A8B429;  }
+
+
+        .flex-blackjack-row-3 {
+            display: flex;
+            justify-content: center;
+            color: white;   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

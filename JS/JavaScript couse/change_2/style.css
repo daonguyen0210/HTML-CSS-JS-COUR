@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border-radius: 1rem;
+    background: lightsteelblue;
+    border: 2px solid yellowgreen;
+    width: 70vw;
+    height: 90vh;   
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45vh 45vh;
+    /* grid-template-rows: 120px 60px auto; */
+    grid-auto-flow: row;
+
+    position: absolute;
+    left: calc( 50vw - 35vw );
+    top: calc( 50vh - 45vh);
+
+}
+
+
+.challenge-2 .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.challenge-2 .title > h1{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color border-bottom 0.5s;
+
+    border-bottom: 2px solid transparent;
+}
+
+
+.challenge-2 .nav{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.challenge-2 .nav .button{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+/* area content class */
+.challenge-2 .content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge-2 .content img{
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.challenge-2 .title :hover{
+    color: black;
+    border-bottom: 2px solid lightslategray;
+}
+
+
+
+/* Challenge 3 */
+.challenge-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto;
+
+}
+
+.challenge-3 .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.challenge-3 .title h1{
+    width: auto;
+    height: auto;
+    color: #8a8a8a;
+    border-bottom: 2px solid #8a8a8a;
+    transition: border-bottom color 0.5s;
+}
+
+.challenge-3 .nav{
+    display: flex;
+    justify-content: space-around;
+    /* 
+    offset-x | offset-y | blur-radius | spread-radius | color 
+    lan theo x | lan theo y |  độ mờ >=0 | độ phủ rộng | màu sắc
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    trục x đi từ góc II -> I
+    trục y đi từ góc II -> III
+    */
+    
+    align-items: center;
+}
+
+.challenge-3 .nav img{
+    box-shadow: 0px 0px 20px 7px transparent;
+    transition: box-shadow 0.5s;
+}
+
+.challenge-3 .title :hover{
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.challenge-3 .nav :hover{
+    box-shadow: 0px 0px 7px 7px blue;
+}

@@ -1,0 +1,27 @@
+OOP có 4 đặc tính:
+    +, encapsulation ( tính đóng gói):
+        gói các biến, các hàm có liên quan lại với nhau, giúp giảm độ phức tạp, tăng tính tái sử dụng 
+    +, abstraction ( tính trừu tượng):
+        làm giảm độ phức tạp, ẩn các tính năng có tính private
+    +, inheritance ( tính kế thừa)
+    +, polymorphism ( tính đa hình)
+
+1, Các khái niệm liên quan đến Object
+    + Creating Object
+    + Factories and Constructors
+        Factory Function: when a normal return an object, we call it a factory function
+    + Primivites and Reference Types
+    + Working with Properties
+    + Private Properties
+    + Getters / Setters
+
+
+function Human() {
+    ...some Properties are created by users
+
+
+    ...object is created by js
+    prototype = {
+        constructor = human();
+    }
+}

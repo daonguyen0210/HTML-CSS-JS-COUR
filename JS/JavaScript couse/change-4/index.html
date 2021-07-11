@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container-5">
+        <div class="title">
+            <h2>Challenge 5: Blackjack</h2>
+            <h3><span id="blackjack_result">Let's play !!!</span></h3>
+        </div>
+
+        <div class="content">
+            <section class="flex-blackjack-row-1">
+                <div id="your-box">
+                    <div id="your-box-title">
+                        <h2>You: <span id="your-blackjack-result">0</span></h2>
+                    </div>
+
+                    <div id="your-box-playing-cards">
+
+                    </div>
+                    
+                </div>
+                
+                <div id="dealer-box">
+                    <div id="dealer-box-title">
+                        <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+                    </div>
+
+                    <div id="dealer-box-playing-cards">
+                            
+                    </div>
+                </div>
+            </section>
+            
+            <div class="flex-blackjack-row-2" >
+                <div>
+                    <button id="blackjack-hit-btn" class="btn btn-hit" onclick="btnClickofCustom(this)">Hit</button>
+                    <button id="blackjack-stand-btn" class="btn btn-stand" onclick="btnClickofCustom(this)">Stand</button>
+                    <button id="blackjack-deal-btn" class="btn btn-deal" onclick="btnClickofCustom(this)">Deal</button>
+                </div>
+            </div>
+            
+            <div class="flex-blackjack-row-3">
+                <div id="table-result">
+                    <table>
+                        <!-- table row -->
+                        <tr>    
+                            <th>Wins</th>
+                            <th>Loses</th>
+                            <th>Draws</th>
+                        </tr>
+                        
+                        <tr>
+                            <!-- table data -->
+                            <td><span id="wins" value = 0>0</span></td>  
+                            <td><span id="losses">0</span></td>
+                            <td><span id="draws">0</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
